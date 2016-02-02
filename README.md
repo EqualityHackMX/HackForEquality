@@ -6,10 +6,12 @@
 
 ## Instalación
 `npm install`
+
+
 `node server`
 
 ## Colabora con el website!
-Si tienes alguna colaboración, crea un nuevo branch con el nombre `develop` y haz un pull request con base en `staging`
+Si tienes alguna colaboración, crea un nuevo branch con el nombre `develop` y haz un pull request con base en `staging` 
 Para cualquier duda o actualización al sitio, abre un issue. Agrégale etiquetas para que sea más fácil asignarselo a alguien o bien, puedes auto-asignartelo. 
 
 # conference
