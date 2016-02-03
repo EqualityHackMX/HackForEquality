@@ -487,7 +487,7 @@ td li {
 /* 
  * 6.7 Section: Schedule
  */
- .partner {
+ .partner, .contact {
   background-color: #f8f8f8;
 }
 .partner .partner-box {
@@ -563,20 +563,6 @@ td li {
  */
  .faq .panel-heading {
   cursor: pointer;
-}
-.faq .faq-toggle.collapsed::before {
-  font-family: "Ionicons";
-  content: "\f218";
-  -webkit-transition: 0.5s linear ease-out;
-  transition: 0.5s linear ease-out;
-  position: absolute;
-  left: 15px;
-}
-.faq .faq-toggle::before {
-  position: absolute;
-  left: 15px;
-  font-family: "Ionicons";
-  content: "\f209";
 }
 .faq .panel-group .panel + .panel {
   margin-top: 15px;
