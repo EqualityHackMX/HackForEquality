@@ -49,7 +49,8 @@ app.post('/', function(req, res) {
 app.use('/bower_components', express.static(__dirname + '/public/bower_components'))
 app.use('/assets', express.static(__dirname + '/public/assets'))
 
-var server = app.listen(3000, function () {
+var port = process.env.PORT || 3000
+var server = app.listen(port, function () {
   var host = server.address().address
   var port = server.address().port
 
