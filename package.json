@@ -2,7 +2,8 @@
   "name": "hackforequality-website",
   "version": "1.0.0",
   "description": "Sitio del Hack for Equality, el primer hackathon organizado por comunidades de mujeres en la CDMX",
-  "main": "index.js",
+  "main": "server.js",
+  "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

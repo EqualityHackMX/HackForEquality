@@ -2,21 +2,15 @@
  * Change Navbar color while scrolling
  */
 
- $(window).scroll(function(){
-   handleTopNavAnimation();
-});
-
- $(window).load(function(){
-   handleTopNavAnimation();
-});
+ $(window).scroll(handleTopNavAnimation);
+ $(window).load(handleTopNavAnimation);
 
  function handleTopNavAnimation() {
    var top=$(window).scrollTop();
 
-   if(top>10){
+   if (top>10) {
       $('#site-nav').addClass('navbar-solid'); 
-  }
-  else{
+   } else{
       $('#site-nav').removeClass('navbar-solid'); 
   }
 }
@@ -25,7 +19,7 @@
  * Registration Form
  */
 
- var signup = function(e){
+function signup (e){
     e.preventDefault();
     $.ajax({
         url:'/',
