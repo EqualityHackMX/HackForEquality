@@ -35,14 +35,16 @@ app.post('/', function(req, res) {
   };
 
   transporter.sendMail(mailOptions, function(error, info){
-      if(error){
-          return console.log(error);
+      if (error){
+          console.log(error)
+          return res.sendStatus(500)
       }
       console.log('Message sent: ' + info.response);
+      res.sendStatus(200)
   });
 
   //Logging for heroku c:
-  console.log('Name: ' + name + 'Email: ' + email + 'Message: ' + message)
+  console.log('Name: ' + name + ' Email: ' + email + ' Message: ' + message)
 
 }); //post to /
 
