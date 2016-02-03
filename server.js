@@ -20,7 +20,7 @@ var transporter = nodemailer.createTransport({
   }
 });
 
-app.post('/', function(req, res)){
+app.post('/', function(req, res) {
 
   var name = req.body.name
   var email = req.body.email
@@ -28,10 +28,10 @@ app.post('/', function(req, res)){
 
   var mailOptions = {
     from: 'website@hackforequality.mx', // sender address
-    to: 'mexicocity@womenwhocode.com', 'ana@epicqueen.com' // list of receivers
+    to: 'mexicocity@womenwhocode.com, ana@epicqueen.com', // list of receivers
     subject: 'Hack for Equality - Solicitud de Información', // Subject line
-    text: 'Nombre: ' + name + ' ,Email: ' + email + ' ,Mensaje: '  message,
-    html: '<a href="' + email + '">' + name '</a> ha enviado un mensaje a través de la forma de contacto del sitio Hack For Equality:<br/><br/>' + message
+    text: 'Nombre: ' + name + ' ,Email: ' + email + ' ,Mensaje: ' +  message,
+    html: '<a href="'+ email + '">' + name + '</a> ha enviado un mensaje usando la forma desde el sitio de Hack for Equality:<br/><br/>' + message
   };
 
   transporter.sendMail(mailOptions, function(error, info){
@@ -44,7 +44,7 @@ app.post('/', function(req, res)){
   //Logging for heroku c:
   console.log('Name: ' + name + 'Email: ' + email + 'Message: ' + message)
 
-} //post to /
+}); //post to /
 
 app.use('/bower_components', express.static(__dirname + '/public/bower_components'))
 app.use('/assets', express.static(__dirname + '/public/assets'))
