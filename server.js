@@ -10,7 +10,7 @@ app.get('/', function (req, res) {
 })
 
 app.use(bodyParser.json())
-app.use( bodyParser.urlencoded( { extended: true } ) )
+app.use(bodyParser.urlencoded( { extended: true } ))
 
 var transporter = nodemailer.createTransport({
   service: 'gmail',
