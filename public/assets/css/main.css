@@ -528,9 +528,13 @@ td li {
 }
 .partner .partner-box-9 {
   background: url(../images/partner/partner-9.png) no-repeat center center/contain;
+   height: 150px;
+  width: 300px;
 }
 .partner .partner-box-10 {
   background: url(../images/partner/partner-10.png) no-repeat center center/contain;
+   height: 150px;
+  width: 300px;
 }
 
 .partner .partner-box:hover {
