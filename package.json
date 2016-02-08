@@ -1,0 +1,33 @@
+{
+  "name": "hackforequality-website",
+  "version": "1.0.0",
+  "description": "Sitio del Hack for Equality, el primer hackathon organizado por comunidades de mujeres en la CDMX",
+  "main": "server.js",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EqualityHackMX/HackForEquality.git"
+  },
+  "keywords": [
+    "diversity",
+    "website",
+    "development",
+    "team",
+    "equality",
+    "event"
+  ],
+  "author": "Hack for Equality Team",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/EqualityHackMX/HackForEquality/issues"
+  },
+  "homepage": "https://github.com/EqualityHackMX/HackForEquality#readme",
+  "dependencies": {
+    "body-parser": "^1.14.2",
+    "express": "^4.13.4",
+    "nodemailer": "^2.1.0"
+  }
+}
