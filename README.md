@@ -14,3 +14,4 @@ Para cualquier duda o actualización al sitio, abre un issue. Agrégale etiqueta
 
 # conference
 Responsive HTML5 Bootstrap 3 template for Event Site
+https://themewagon.com/themes/conference-free-responsive-event-planning-html5-template/
