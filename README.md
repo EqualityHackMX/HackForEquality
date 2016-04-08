@@ -5,7 +5,7 @@
 - npm 2.14.7
 
 ## Instalación
-`npm install`
+`npm install`  
 `node server`
 
 ## Colabora con el website!
